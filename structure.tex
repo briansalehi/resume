@@ -82,66 +82,72 @@
 \newcommand{\Sep}{\vspace{1em}} % New command for the spacing between headings
 \newcommand{\SmallSep}{\vspace{0.5em}} % New command for the spacing within headings
 
-\newcommand{\aboutme}[2]{ % New command for the about me section
-\textbf{\color{RoyalBlue} #1}~~#2\par\Sep
+\newcommand{\aboutme}[2]{
+    \textbf{\color{RoyalBlue} #1}~~#2\par\Sep
 }
 	
-\newcommand{\CVSection}[1]{ % New command for the headings within sections
-{\Large\textbf{#1}}\par
-\SmallSep % Used for spacing
+\newcommand{\CVSection}[1]{
+    {\Large\textbf{#1}}\par
+    \SmallSep
 }
 
-\newcommand{\CVItem}[2]{ % New command for the item descriptions
-\textbf{\color{RoyalBlue} #1}\par
-#2
-\SmallSep % Used for spacing
+\newcommand{\CVItem}[2]{
+    \textbf{\color{RoyalBlue} #1}\par
+    #2
+    \SmallSep
 }
 
-\newcommand{\CVRecord}[5]{ % New command for a data record
-\textbf{#1}\hfill\textit{#5}\par
-\textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
-#4
-\Sep % Used for spacing
+\newcommand{\CVRecord}[5]{
+    \textbf{#1}\hfill\textit{#5}\par
+    \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+    #4
+    \Sep
 }
 
-\newcommand{\CVCertificate}[5]{ % New command for a data record
-\textbf{#1}\hfill\textit{#5}\par
-\textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
-#4
-\Sep % Used for spacing
+\newcommand{\CVCertificate}[5]{
+    \textbf{#1}\hfill\textit{#5}\par
+    \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+    #4
+    \Sep
 }
 
-\newcommand{\CVCooperation}[6]{ % New command for a data record
+\newcommand{\CVCooperation}[6]{
 	\textbf{#1}\hfill\textit{#6} (\textit{#5})\par
-\textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
-#4
-\Sep % Used for spacing
+    \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+    #4
+    \Sep
 }
 
-\newcommand{\CVContribution}[5]{ % New command for a data record
-\textbf{#1}\hfill\textit{#3}\par
-\textbf{\color{RoyalBlue}\textit{#2}}\par
-#5\par
-\Sep % Used for spacing
+\newcommand{\CVContribution}[5]{
+    \textbf{#1}\hfill\textit{#3}\par
+    \textbf{\color{RoyalBlue}\textit{#2}}\par
+    #5\par
+    \Sep
 }
 
-\newcommand{\CVReference}[4]{ % New command for references
+\newcommand{\CVReference}[4]{
     \textbf{#1}\hfill\textit{#4}\par
     #2, #3
-    \SmallSep % Used for spacing
+    \SmallSep
 }
 
-\newcommand{\CVAbility}[3]{ % New command for the item descriptions
-\textbf{\color{RoyalBlue} #1} \hfill #2 \par
-#3
-\SmallSep % Used for spacing
+\newcommand{\CVAbility}[3]{
+    \textbf{\color{RoyalBlue} #1} \hfill #2 \par
+    #3
+    \SmallSep
 }
 
-\newcommand{\CVSkill}[2]{ % New command for the item descriptions
-\textbf{#1}\par
-\quad{\small#2}
-\par
-\SmallSep % Used for spacing
+\newcommand{\CVExperty}[2]{
+    \textbf{\color{RoyalBlue} #1}\par
+    \quad{\small#2}\par
+    \SmallSep
+}
+
+\newcommand{\CVSkill}[2]{
+    \textbf{#1}\par
+    \quad{\small#2}
+    \par
+    \SmallSep
 }
 
 \newcommand{\bluebullet}{\textcolor{RoyalBlue}{$\circ$}~~} % New command for the blue bullets
@@ -155,5 +161,9 @@
 %calculate number of years
 \newcounter{age}\setcounter{age}{\the\year}\addtocounter{age}{-\thedobyear}
 %condition to test for birthmonth, then birth day.
-\ifnum\the\month>\thedobmonth\else%
-	\ifnum\the\day<\thedobday\addtocounter{age}{-1}\fi\fi
+\ifnum \the\month>\thedobmonth
+\else
+	\ifnum \the\day<\thedobday
+        \addtocounter{age}{-1}
+    \fi
+\fi
