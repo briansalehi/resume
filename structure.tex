@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
 % Vel (vel@latextemplates.com)
 %
 % License:
@@ -45,17 +45,17 @@
 \newlength{\LeftMainSep}
 \setlength{\LeftMainSep}{0.2\textwidth}
 \addtolength{\LeftMainSep}{1\columnsep}
- 
+
 % Small static frame for the vertical line
 \newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
- 
+
 % Content of the static frame with the vertical line
 \begin{staticcontents}{1}
 \hfill
 \tikz{\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0](0,0) -- (0,\textheight);}
 \hfill\mbox{}
 \end{staticcontents}
- 
+
 % Define the right frame (main body)
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
@@ -85,7 +85,7 @@
 \newcommand{\aboutme}[2]{
     \textbf{\color{RoyalBlue} #1}~~#2\par\Sep
 }
-	
+
 \newcommand{\CVSection}[1]{
     {\Large\textbf{#1}}\par
     \SmallSep
@@ -104,25 +104,30 @@
     \Sep
 }
 
-\newcommand{\CVCertificate}[5]{
+\newcommand{\CVExperience}[5]{
     \textbf{#1}\hfill\textit{#5}\par
     \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
     #4
     \Sep
 }
 
+\newcommand{\CVCertificate}[5]{
+    \textbf{#1}\hfill\textit{#5}\par
+    \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+    #4
+    \SmallSep
+}
+
 \newcommand{\CVCooperation}[6]{
 	\textbf{#1}\hfill\textit{#6} (\textit{#5})\par
     \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
     #4
-    \Sep
 }
 
 \newcommand{\CVContribution}[5]{
     \textbf{#1}\hfill\textit{#3}\par
     \textbf{\color{RoyalBlue}\textit{#2}}\par
     #5\par
-    \Sep
 }
 
 \newcommand{\CVReference}[4]{
