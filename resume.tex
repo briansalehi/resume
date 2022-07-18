@@ -29,38 +29,36 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-
-\userinformation{ % Set the content that goes into the sidebar of each page
-\begin{flushright}
-% Comment out this figure block if you don't want a photo
-%\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
-\small % Smaller font size
-Brian Salehi \\ % Your name
-\SmallSep % Some whitespace
-\textbf{Age} \\
-\theage \\ % Your age
-\Sep % Some whitespace
-\textbf{Email} \\
-\url{salehibrian@gmail.com} \\ % Your email address
-\Sep % Some whitespace
-\textbf{Phone} \\
-+98 903 121 8938 \\ % Your phone number
-\Sep % Some whitespace
-\textbf{Website} \\
-\url{briansalehi.ir} \\ % Your URL
-\Sep % Some whitespace
-\textbf{LinkedIn} \\
-\url{linkedin.com/in/briansalehi} \\ % Your URL
-\Sep % Some whitespace
-\textbf{Github} \\
-\url{github.com/briansalehi} \\ % Your URL
-\Sep % Some whitespace
-\textbf{Address} \\
-No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
-\vfill % Whitespace under this block to push it up under the photo
-\end{flushright}
+% Set the content that goes into the sidebar of each page
+\userinformation{\begin{flushright}
+    % Comment out this figure block if you don't want a photo
+    %\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+    \small % Smaller font size
+    Brian Salehi \\ % Your name
+    \SmallSep % Some whitespace
+    \textbf{Age} \\
+    \theage \\ % Your age
+    \Sep % Some whitespace
+    \textbf{Email} \\
+    \url{salehibrian@gmail.com} \\ % Your email address
+    \Sep % Some whitespace
+    \textbf{Phone} \\
+    +98 903 121 8938 \\ % Your phone number
+    \Sep % Some whitespace
+    \textbf{Website} \\
+    \url{briansalehi.ir} \\ % Your URL
+    \Sep % Some whitespace
+    \textbf{LinkedIn} \\
+    \url{linkedin.com/in/briansalehi} \\ % Your URL
+    \Sep % Some whitespace
+    \textbf{Github} \\
+    \url{github.com/briansalehi} \\ % Your URL
+    \Sep % Some whitespace
+    \textbf{Address} \\
+    No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
+    \vfill % Whitespace under this block to push it up under the photo
+    \end{flushright}
 }
-
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -83,10 +81,8 @@ No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
 %	ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{Professional Summary} {
-    I am a Linux system programmer, having experience in C and C++ programming and using a few scripting languages and development tools.
-    I am interested in open source movement, and I usually spend some of my spare time making open source tools or contributing to open source projects.
-}
+\aboutme{Professional Summary}
+{I am a Linux system programmer, having experience in C and C++ programming and using a few scripting languages and development tools. I am interested in open source movement, and I usually spend some of my spare time making open source tools or contributing to open source projects.}
 
 %------------------------------------------------
 
@@ -96,39 +92,28 @@ No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
 %	EXPERTISE
 %----------------------------------------------------------------------------------------
 
-\CVSection{Fields of Expertise}
+%\CVSection{Fields of Expertise}
 
-\CVExperty{Linux System Programming}{Linux applications and services}
-\CVExperty{User Interface Development}{Designing desktop user interface using Qt framework}
+%\CVExperty{Linux System Programming}{Linux applications and services}
+%\CVExperty{User Interface Development}{Designing desktop user interface using Qt framework}
 
 %------------------------------------------------
 
-\SmallSep % Small whitespace between relative sections
+%\SmallSep % Small whitespace between relative sections
 
 %----------------------------------------------------------------------------------------
 %	STUDIES
 %----------------------------------------------------------------------------------------
 
-\CVSection{Fields of Studies}
+%\CVSection{Fields of Studies}
 
-\CVExperty{Linux Kernel Programming}{Linux Kernel and device driver development}
-\CVExperty{Image Processing}{Using OpenCV library to process images and videos}
-\CVExperty{Graphics Programming}{Creating 3D graphics scene using OpenGL APIs}
+%\CVExperty{Linux Kernel Programming}{Linux Kernel and device driver development}
+%\CVExperty{Image Processing}{Using OpenCV library to process images and videos}
+%\CVExperty{Graphics Programming}{Creating 3D graphics scene using OpenGL APIs}
 
 %------------------------------------------------
 
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	NEW PAGE DELIMITER
-%	Place this block wherever you would like the content of your CV to go onto the next page
-%----------------------------------------------------------------------------------------
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
+%\Sep % Extra whitespace after the end of a major section
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -149,7 +134,7 @@ No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
 \CVExperience{Arad Company}
 {\textit{Software Engineer}}
 {05/2021 - 05/2022}
-{Contributed to user interfaces, desktop applications, 3D graphical applications, and web services of major projects.\par https://aparat.com/v/7iq4Y}
+{Contributed to user interfaces, desktop applications, 3D graphical applications, and web services of major projects.}
 {aradtechs.com}
 
 %------------------------------------------------
@@ -198,17 +183,17 @@ No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
 
 %------------------------------------------------
 
-\Sep % Extra whitespace after the end of a major section
+%\Sep % Extra whitespace after the end of a major section
 
 %----------------------------------------------------------------------------------------
 %	Contribution
 %----------------------------------------------------------------------------------------
 
-\CVSection{Contributions}
+%\CVSection{Contributions}
 
 %------------------------------------------------
 
-Open source contributions will be listed here as soon as they are accepted by open source communities.
+%Open source contributions will be listed here as soon as they are accepted by open source communities.
 %\CVContribution{OpenCV}
 %{\textit{Computer Vision Library}}
 %{opencv.org}
@@ -241,15 +226,13 @@ Open source contributions will be listed here as soon as they are accepted by op
 \CVItem{Technical Skills}{}
 
 \CVSkill{C++}{Writing programs using STL and Boost with recent language standards}
-\CVSkill{C}{Linux interface programming and developing high performance services}
+\CVSkill{C}{Linux system programming and developing high performance services}
 \CVSkill{Python}{Advanced scripting, prototyping, and automating with unit tests}
-\CVSkill{x86\_64 Assembly}{Writing processor specific high performance procedures and data vectorization}
 \CVSkill{Bash}{Advanced scripting, prototyping and automating in Linux systems}
 \CVSkill{Linux Administration}{Configuring, automating, administering and securing Linux systems}
 \CVSkill{Qt, QML}{Developing full-featured cross-platform graphical user interfaces}
-\CVSkill{OpenCV}{Developing image and video processing applications}
-\CVSkill{OpenGL, GLSL}{3D graphics programming and developing game engines}
 \CVSkill{PostgreSQL, MySQL, MongoDB}{Designing, developing and administering relational and non-relational databases}
+\CVSkill{x86\_64 Assembly}{Writing processor specific high performance procedures and data vectorization}
 
 %------------------------------------------------
 
@@ -260,7 +243,6 @@ Open source contributions will be listed here as soon as they are accepted by op
 \CVItem{Tools}{}
 
 \CVSkill{Git}{Using source control professionally along many of development workflows}
-\CVSkill{Docker, Kubernetes}{Dockerizing and shipping projects using advanced containarization techniques}
 \CVSkill{GCC, GDB}{Using compiling optimizations and debugging techniques}
 \CVSkill{Sanitizers, Valgrind Suite}{Using advanced profiling tools along development}
 \CVSkill{Make, CMake Suite}{Adapting projects to auto-compiling, testing, packaging and monitoring}
@@ -274,7 +256,7 @@ Open source contributions will be listed here as soon as they are accepted by op
 
 \CVItem{Miscellaneous Skills}{}
 
-\CVSkill{Vim}{My default text editor for coding and configuring}
+\CVSkill{Vim}{My favorite editor mostly for coding and configuring}
 \CVSkill{LaTeX}{Writing documents, including this resume}
 
 %------------------------------------------------
@@ -305,13 +287,13 @@ Open source contributions will be listed here as soon as they are accepted by op
 %------------------------------------------------
 
 \CVRecord{Islamic Azad University, Tehran North}
-{MSc. of Computer Science, Software Engineering}
+{MSc.\ of Computer Science, Software Engineering}
 {09/2021 - 06/2023}
 {}
 {iau-tnb.ac.ir}
 
 \CVRecord{Islamic Azad University, Tehran East}
-{BSc. of Computer Science}
+{BSc.\ of Computer Science}
 {09/2016 - 06/2021}
 {}
 {iauet.ac.ir}

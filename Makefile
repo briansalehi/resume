@@ -2,7 +2,7 @@ CC = pdflatex
 CFLAGS =
 
 resume.pdf: resume.tex
-	$(CC) $(CFLAGS)
+	$(CC) $(CFLAGS) $^
 
 .PHONY: clean
 
