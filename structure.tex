@@ -104,11 +104,17 @@
     \Sep
 }
 
+\newcommand{\CVEducationSet}[5]{
+    \textbf{#1}\hfill\textit{#2}\par
+    \textbf{\color{RoyalBlue}\textit{#3}}\hfill\textbf{\color{RoyalBlue} #4}\par
+    \Sep
+}
+
 \newcommand{\CVExperience}[5]{
     \textbf{#1}\hfill\textit{#5}\par
     \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
     #4
-    \Sep
+    \SmallSep
 }
 
 \newcommand{\CVCertificate}[5]{
@@ -118,10 +124,18 @@
     \SmallSep
 }
 
+\newcommand{\CVCertificateSet}[3]{
+    \textbf{#1}\hfill\textit{#2}\par
+    \textbf{\color{RoyalBlue}\textit{#3}}
+    \SmallSep
+}
+
+
 \newcommand{\CVCooperation}[6]{
 	\textbf{#1}\hfill\textit{#6} (\textit{#5})\par
     \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
     #4
+    \SmallSep
 }
 
 \newcommand{\CVContribution}[5]{
@@ -142,6 +156,13 @@
     \SmallSep
 }
 
+\newcommand{\CVLanguageSet}[6]{
+    \textbf{\color{RoyalBlue} #1} (#2)
+    \textbf{\color{RoyalBlue} #3} (#4)
+    \textbf{\color{RoyalBlue} #5} (#6)
+    \SmallSep
+}
+
 \newcommand{\CVExperty}[2]{
     \textbf{\color{RoyalBlue} #1}\par
     \quad{\small#2}\par
@@ -154,6 +175,8 @@
     \par
     \SmallSep
 }
+
+\newcommand{\CVSkillSet}[2]{\textbf{\color{RoyalBlue} #1}\par\textbf{#2}\SmallSep}
 
 \newcommand{\bluebullet}{\textcolor{RoyalBlue}{$\circ$}~~} % New command for the blue bullets
 
